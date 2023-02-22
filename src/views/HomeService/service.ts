@@ -1,5 +1,6 @@
-import request from "@/utils/request";
+import useRequest from "@/utils/useRequest";
 
+// 获取企业信息
 export const getInfo = (companyId: string) => {
-  return request(`/api/server/get/company/info?companyId=${companyId}`);
+  return useRequest(`/api/server/get/company/info?companyId=${companyId}`);
 };

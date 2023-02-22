@@ -1,14 +1,18 @@
 <template>
-  <div>服务侧</div>
+  <div>{{ data?.body?.address }}</div>
 </template>
 
 <script setup lang="ts">
+import { watch } from "vue";
 import { getInfo } from "./service";
 
 const companyId = "instance_entity_company-640c81969439576b6f9d31729357683b";
-
-getInfo(companyId).then((res) => {
-  console.log(res);
+const { data } = getInfo(companyId);
+console.log(data);
+watch(data, () => {
+  if (data) {
+    console.log(data.value);
+  }
 });
 </script>
 
