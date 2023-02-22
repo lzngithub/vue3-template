@@ -1,5 +1,5 @@
 <template>
-  <div>{{ data?.body?.address }}</div>
+  <div>{{ data?.body?.name }}</div>
 </template>
 
 <script setup lang="ts">
