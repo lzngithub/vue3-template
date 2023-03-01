@@ -13,6 +13,8 @@ export default defineComponent({
     ChildHome,
   },
   setup() {
+    console.log("dev1");
+    console.log("dev2");
     return {};
   },
 });

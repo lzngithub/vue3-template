@@ -31,7 +31,7 @@ watch(chainIds, () => {
     // chainIds: chainIds,
   });
 });
-
+console.log(11);
 const router = useRouter();
 const goNews = () => {
   router.push(`/service/news?companyId=${companyId}`);
