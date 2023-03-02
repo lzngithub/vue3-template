@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
     "@vueuse/core": "^9.13.0",
     "@vueuse/integrations": "^9.13.0",
     "ant-design-vue": "^3.2.15",
