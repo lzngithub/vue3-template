@@ -147,11 +147,12 @@ export default defineComponent({
       height: 500px;
       position: absolute;
       top: -100px;
-      right: -250px;
+      right: -150px;
       border-radius: 50%;
       opacity: 0.4;
       box-shadow: 0px 0px 200px #315ade;
       background: radial-gradient(#315ade 36%, rgba(49, 90, 222, 0.1));
+      filter: blur(5px);
     }
   }
 }
